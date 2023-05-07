@@ -87,21 +87,9 @@
   left: 2px;
 }
 
-@media (min-width: 768px) {
-  .button-53 {
-    padding: 0.75rem 3rem;
-    font-size: 1.25rem;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: splash infinite 4s linear;
-  }
-}
 
 .App-header {
-  background-color: #fff;
+  background-color: #black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

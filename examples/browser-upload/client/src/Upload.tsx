@@ -49,20 +49,20 @@ function Upload() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
 
         {isLoading ? (
           <>Uploading...</>
         ) : (
           <>
-            <p>Upload Content to IPFS</p>
+            <p>Upload Research Paper to IPFS</p>
             <div className="flex gap-32">
               <div className="">
                 <div
-                  className="button-con button-53"
+                  className="btn btn-info m-4"
                   onClick={handleSelectFile}
                 >
-                  Select File
+                  Select your research pdf
                   <input
                     id="file"
                     type="file"
@@ -72,20 +72,20 @@ function Upload() {
                     style={{ display: "none" }}
                   />
                 </div>
-                <div className="flex-1 flex items-center pl-4 text-sm -rotate-2">
+                <div className="flex-1 flex items-center pl-4 text-sm m-4">
                   {file ? file?.name : "No file selected"}
                 </div>
               </div>
               <div className="flex flex-col">
                 <div
-                  className="button-con button-53 h-12"
+                  className="button-con btn btn-warning"
                   onClick={handleUpload}
                 >
                   Upload
                 </div>
                 {uploadLink && (
                   <a
-                    className="text-sm mt-4 -rotate-2"
+                    className="text-sm mt-4 "
                     href={uploadLink}
                     target="__blank"
                   >
@@ -94,11 +94,11 @@ function Upload() {
                 )}
                 {dynamicLink && (
                   <a
-                    className="text-sm mt-4 -rotate-2"
+                    className="text-sm mt-4 "
                     href={`https://${dynamicLink}`}
                     target="__blank"
                   >
-                    {dynamicLink}
+                    {"now paste this link in the publish form"}
                   </a>
                 )}
               </div>
